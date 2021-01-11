@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='home'),
+    path('photos/', views.photo, name="photos")
 ]
