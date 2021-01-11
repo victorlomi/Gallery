@@ -72,5 +72,13 @@
 
 /* homepage */
 .image-grid {
+	width: 91%;
+ 	column-count: 5;
+    column-gap: 15px;
+    margin: 0 auto 0;
+}
 
+.image-grid img {
+	width: 230px;
+	margin-top: 20px;
 }
