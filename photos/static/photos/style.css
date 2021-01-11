@@ -1,12 +1,22 @@
 /* navbar */
 .nav-container {
+	font-family: 'Dosis', sans-serif;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	padding: 0;
+	padding: 25px 0;
+}
+
+#search-box {
+	width: 550px;
+	box-shadow: 0 4px 13px 3px #0000000f;
+	height: 53px;
+	border: none;
 }
 
 .nav-title {
 	grid-column: 2;
+	font-weight: 700;
+	font-size: 29px;
 }
 
 .nav-search {
@@ -14,5 +24,13 @@
 }
 
 .nav-links {
+	display: flex;
 	grid-column: span 3;
+	justify-content: space-between;
+}
+
+.nav-links a {
+	font-weight: 500;
+	font-size: 18px;
+	color: #222;
 }
