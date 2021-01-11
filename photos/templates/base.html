@@ -6,6 +6,8 @@
   <title>Gallery</title>
   {% block styles %}
     {% bootstrap_css %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'photos/style.css' %}">
   {% endblock %}
 </head>
 <body>
