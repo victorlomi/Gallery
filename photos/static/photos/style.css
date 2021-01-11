@@ -1,13 +1,11 @@
 /* navbar */
 .nav-container {
 	font-family: 'Dosis', sans-serif;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	padding: 40px 0;
+	padding: 20px 60px;
 }
 
 #search-box {
-	width: 594px;
+	width: 627px;
 	box-shadow: 0 4px 13px 3px #0000000f;
 	height: 53px;
 	border: none;
@@ -61,8 +59,8 @@
 }
 
 .nav-links {
+	width: 324px;
 	display: flex;
-	grid-column: 9 / span 3;
 	justify-content: space-between;
 }
 
@@ -73,3 +71,6 @@
 }
 
 /* homepage */
+.image-grid {
+
+}
