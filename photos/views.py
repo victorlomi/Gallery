@@ -7,4 +7,4 @@ def index(request):
 
 def photo(request, photo_id):
 	"""Render a photo with a specific image"""
-	return HttpResponse("showing a photo")
+	return render(request, 'photo.html')

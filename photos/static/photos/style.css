@@ -82,3 +82,8 @@
 	width: 230px;
 	margin-top: 20px;
 }
+
+/* photo page */
+.image-container {
+	padding: 20px 0 0 64px;
+}
