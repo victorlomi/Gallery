@@ -7,13 +7,20 @@
 
 	<!-- Search Form -->
 	<form class="form-inline my-2 my-lg-0 nav-search">
-	  	<input id="search-box" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<!-- search icon -->
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#939393" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+
+		<!-- old with form control -->
+	  	<!-- <input id="search-box" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+	  	<input id="search-box" class="mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+	  	<!-- dropdown -->
 		<ul class="navbar-nav mr-auto">
 			<!-- Dropdown Links -->
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+				<a class="nav-link dropdown-toggle nav-search-type" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Location</a>
+					<a class="dropdown-item nav-search-type" href="#">Location</a>
 				</div>
 			</li>
 		</ul>
