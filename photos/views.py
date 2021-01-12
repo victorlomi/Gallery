@@ -19,8 +19,9 @@ def search_results(request):
     if 'tag' in request.GET and request.GET["tag"]:
         search_term = request.GET.get("tag")
         searched_categories = Image.search_image(search_term)
+        searched_locations = Image.filter_by_location(search_term)
         message = f"{search_term}"
-        return render(request, 'category.html',{"search_term": search_term,"photos": searched_categories})
+        return render(request, 'category.html',{"search_term": search_term,"category_photos": searched_categories, "location_photos": searched_locations})
     else:
         message = "You haven't searched for any term"
         # return render(request, 'all-news/search.html',{"message":message})
