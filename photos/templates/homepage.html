@@ -2,10 +2,8 @@
 
 {% block content %}
 	<div class="image-grid">
-    	{% load static %}
-   		<!-- <a href=""><img src="{% static 'photos/images/img (1).jpg' %}"></a> -->
    		{% for photo in photos %}
-   			<a href="#"><img src="{{ photo.image.url }}"></a>
+   			<a href="{% url 'photos' photo_id=photo.id %}"><img src="{{ photo.image.url }}"></a>
    		{% endfor %}
 	</div>
 {% endblock %}

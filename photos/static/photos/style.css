@@ -81,6 +81,7 @@
 .image-grid img {
 	width: 230px;
 	margin-top: 20px;
+	border-radius: 6px;
 }
 
 /* photo page */
