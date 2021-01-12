@@ -3,18 +3,9 @@
 {% block content %}
 	<div class="image-grid">
     	{% load static %}
-<!--     	<a href=""><img src="{% static 'photos/images/img (1).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (2).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (3).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (4).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (5).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (6).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (7).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (8).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (9).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (10).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (11).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (12).jpg' %}"></a>
-    	<a href=""><img src="{% static 'photos/images/img (13).jpg' %}"></a> -->
+   		<!-- <a href=""><img src="{% static 'photos/images/img (1).jpg' %}"></a> -->
+   		{% for photo in photos %}
+   			<a href="#"><img src="{{ photo.image.url }}"></a>
+   		{% endfor %}
 	</div>
 {% endblock %}
