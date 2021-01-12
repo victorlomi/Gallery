@@ -50,17 +50,18 @@ class Image(models.Model):
 		location_images = cls.objects.filter(location__name__icontains=location)
 		return location_images
 
-	@classmethod 
-	def save_image(cls):
-		pass
+	def save_image(self):
+		self.save()
 
-	@classmethod 
-	def delete_image(cls):
-		pass
+	def delete_image(self):
+		self.delete()
 
-	@classmethod 
-	def update_image(cls):
-		pass
+	def update_image(self, img):
+		self.image = img.image
+		self.name = img.name
+		self.description = img.description
+		self.location = img.location
+		self.category = img.category
 	
 	@classmethod 
 	def get_image_by_id(cls, id):
