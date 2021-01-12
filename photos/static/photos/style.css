@@ -60,6 +60,7 @@
 
 .nav-links {
 	width: 324px;
+	margin-left: 95px;
 	display: flex;
 	justify-content: space-between;
 }
