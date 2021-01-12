@@ -1,9 +1,10 @@
 # Gallery
+A web app where users can see all kinds of interesting images that represent my personal gallery. There's fashion photos, sport photos, and others. Users can see all the photos but also search for specific ones based on category or location.
 
 
 **Author: Victor Lominyo**
 
-**Live Link: https://tbd.herokuapp.com/**
+**Live Link: https://worldgallery.herokuapp.com/**
 
 
 Technologies Used
@@ -37,6 +38,12 @@ $ . venv/bin/activate
 
 ```
 $ pip install -r requirements.txt
+```
+
+5. Run the development server
+
+```
+$ python manage.py runserver
 ```
 
 You are all set!
