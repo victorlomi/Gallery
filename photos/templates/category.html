@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="tag-title">{{ search_term }}</h1>
+    {% if photos %}
+    <div class="tag-image-grid image-grid">
+        {% for photo in photos %}
+            <a href="{% url 'photos' photo_id=photo.id %}"><img src="{{ photo.image.url }}"></a>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p class="tag-title">No Photos Found</p>
+    {% endif %}
+
+
+{% endblock %}
+

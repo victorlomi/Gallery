@@ -126,3 +126,16 @@
 	margin-top: 4px;
 	margin-left: 18px;
 }
+
+.tag-title {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 36px;
+}
+
+.tag-image-grid {
+	width: 35%;
+	column-count: 3;
+	column-gap: 250px;
+}

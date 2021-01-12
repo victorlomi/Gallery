@@ -20,8 +20,7 @@ def search_results(request):
         search_term = request.GET.get("tag")
         searched_categories = Image.search_image(search_term)
         message = f"{search_term}"
-        # return render(request, 'all-news/photo.html',{"message":message,"articles": searched_articles})
-        return HttpResponse(f"success {message}")
+        return render(request, 'category.html',{"search_term": search_term,"photos": searched_categories})
     else:
         message = "You haven't searched for any term"
         # return render(request, 'all-news/search.html',{"message":message})
