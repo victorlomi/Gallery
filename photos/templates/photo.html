@@ -2,7 +2,6 @@
 
 {% block content %}
 	<div class="image-container">
-    	{% load static %}
-    	<a href=""><img src="{% static 'photos/images/img (1).jpg' %}"></a>
+		<img src="{{ photo.image.url }}">		
 	</div>
 {% endblock %}

@@ -10,4 +10,5 @@ def index(request):
 
 def photo(request, photo_id):
 	"""Render a photo with a specific image"""
-	return render(request, 'photo.html')
+	photo = Image.objects.get(id=photo_id)
+	return render(request, 'photo.html', {"photo": photo})
