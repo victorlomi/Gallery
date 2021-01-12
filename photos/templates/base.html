@@ -20,7 +20,19 @@
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     	{% bootstrap_javascript %}
+        {% bootstrap_javascript %}
+        <script type="text/javascript">
+            function copyLink() {
+                var copyText = document.getElementById("image-link");
+
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+                document.execCommand("copy");
+
+                alert("Copied the text: " + copyText.value);
+            }
+        </script>
     {% endblock %}
 </body>
 </html>

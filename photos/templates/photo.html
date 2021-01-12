@@ -8,6 +8,9 @@
 			<p class="description">{{ photo.description }}</p>
 			<p class="tag location">{{ photo.location }}</p>
 			<p class="tag category">{{ photo.category }}</p>
+
+			<input class="url" type="text" value="{{ full_url }}" id="image-link">
+			<button class="copyBtn" onclick="copyLink()">Copy Link</button>
 		</div>
 	</div>
 {% endblock %}

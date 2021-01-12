@@ -116,3 +116,12 @@
     background-color: #dbdbdb;
 	box-shadow: 0 4px 13px 3px #0000000f;
 }
+
+.details .copyBtn {
+    background-color: #dbdbdb;
+	box-shadow: 0 4px 13px 3px #0000000f;
+    border-radius: 10px;
+	border: none;
+	margin-top: 4px;
+	margin-left: 18px;
+}
