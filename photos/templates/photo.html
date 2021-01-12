@@ -2,6 +2,12 @@
 
 {% block content %}
 	<div class="image-container">
-		<img src="{{ photo.image.url }}">		
+		<img class="large-image" src="{{ photo.image.url }}">		
+		<div class="details">
+			<p class="name">{{ photo.name }}</p>
+			<p class="description">{{ photo.description }}</p>
+			<p class="tag location">{{ photo.location }}</p>
+			<p class="tag category">{{ photo.category }}</p>
+		</div>
 	</div>
 {% endblock %}
